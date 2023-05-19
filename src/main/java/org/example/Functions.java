@@ -15,5 +15,18 @@ public class Functions {
         }
         return result;
     }
+
+    public boolean simpleDigit(int a){
+        boolean flag = true;
+        if(a==1){
+            return false;
+        }
+        for (int i = 2; i <a ; i++) {
+            if (a%i==0) {
+                flag = false;
+            }
+        }
+        return flag;
+    }
 }
 
