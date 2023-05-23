@@ -1,0 +1,19 @@
+{
+  "people": [
+    {
+      "Lastname": "Ivanov",
+      "score": "5",
+      "subject": "math"
+    },
+    {
+      "Lastname": "Petrova",
+      "score": "4",
+      "subject": "Informatika"
+    },
+    {
+      "Lastname": "Krasnov",
+      "score": "5",
+      "subject": "Phisic"
+    }
+  ]
+}
