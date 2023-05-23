@@ -6,7 +6,7 @@
 
 package org.example;
 
-public class sem2Task1 {
+public class Sem2Task1 {
     public static void main(String[] args) {
         String str = "{\"name\":\"Ivanov\", \"country\":\"Russia\", \"city\":\"Moscow\", \"age\":\"null\"}";
         Functions functions = new Functions();
