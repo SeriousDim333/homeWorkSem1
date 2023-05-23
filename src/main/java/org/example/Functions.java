@@ -27,6 +27,7 @@ public class Functions {
         for (int i = 2; i < a; i++) {
             if (a % i == 0) {
                 flag = false;
+                break;
             }
         }
         return flag;
@@ -43,5 +44,34 @@ public class Functions {
             return a * b;
         }
     }
+
+    public String jsonPars(String str){
+        String[] arrstr = str.split(",");
+        String result = "";
+        for (String string : arrstr) {
+            int flag = 0;
+            if (!string.contains("null")) {
+                StringBuilder sb = new StringBuilder(string);
+                for (int i = 0; i < sb.length(); i++) {
+                    if (sb.charAt(i) == ':') {
+                        sb.setCharAt(i, '=');
+                    } else if (sb.charAt(i) == '{' || sb.charAt(i) == '}') {
+                        sb.deleteCharAt(i);
+                        i--;
+                    } else if (sb.charAt(i)=='"'&& flag<2) {
+                        sb.deleteCharAt(i);
+                        flag++;
+                        i--;
+                    }
+                }
+                result += sb.toString()+ " and";
+            }
+        }
+        StringBuilder resB = new StringBuilder(result);
+        resB.delete(result.length()-4,result.length());
+        resB.append(';');
+        return resB.toString();
+    }
 }
+
 
