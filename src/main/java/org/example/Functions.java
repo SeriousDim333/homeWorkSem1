@@ -39,6 +39,7 @@ public class Functions {
         } else if (Objects.equals(c, "-")) {
             return a - b;
         } else if (Objects.equals(c, "/")) {
+            if (b==0) throw new RuntimeException("на ноль делить нельзя");
             return a / b;
         } else {
             return a * b;
