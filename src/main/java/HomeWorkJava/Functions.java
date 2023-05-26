@@ -1,6 +1,8 @@
-package org.example;
+package HomeWorkJava;
 
+import java.util.List;
 import java.util.Objects;
+import java.util.Random;
 
 public class Functions {
     public int factorial(int a) {
@@ -72,6 +74,22 @@ public class Functions {
         resB.delete(result.length()-4,result.length());
         resB.append(';');
         return resB.toString();
+    }
+
+    public void fillList(List<Integer> ints, int intsSize){
+        Random rnd = new Random();
+        for (int i = 0; i < intsSize; i++) {
+            ints.add(rnd.nextInt(100));
+        }
+    }
+
+    public void removeEven(List<Integer> ints){
+        for (int i = 0; i < ints.size(); i++) {
+            if (ints.get(i) %2==0){
+                ints.remove(i);
+                i--;
+            }
+        }
     }
 }
 

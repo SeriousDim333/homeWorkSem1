@@ -9,7 +9,7 @@
 //Студент Петрова получил 4 по предмету Информатика.
 //Студент Краснов получил 5 по предмету Физика.
 
-package org.example;
+package HomeWorkJava;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -23,13 +23,17 @@ public class Sem2Task3 {
     public static void main(String[] args) {
         try (FileReader reader = new FileReader("test.json")) {
             JSONParser jsonParser = new JSONParser();
-            JSONObject jsonObject = (JSONObject) jsonParser.parse(reader);
-            JSONArray array= (JSONArray) jsonObject.get("people");
+            Object obj = jsonParser.parse(reader);   //JSONObject obj = (JSONObject) jsonParser.parse(reader);
+            JSONArray array= (JSONArray) obj;        //JSONArray array= (JSONArray) jsonObject.get("people");
+
+//            Object obj = new JSONParser().parse(reader);
+//            JSONArray array= (JSONArray) obj;
+
             for (Object o : array) {
-                JSONObject obj = (JSONObject) o;
-                String firstName = (String) obj.get("Lastname");
-                String score = (String) obj.get("score");
-                String sub = (String) obj.get("subject");
+                JSONObject object = (JSONObject) o;
+                String firstName = (String) object.get("Lastname");
+                String score = (String) object.get("score");
+                String sub = (String) object.get("subject");
                 System.out.println("студент " + firstName + " получил " + score + " по предмету " + sub);
             }
         } catch (FileNotFoundException e) {

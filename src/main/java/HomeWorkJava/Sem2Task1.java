@@ -4,7 +4,7 @@
 //        Если значение null, то параметр не должен попадать в запрос.
 //        Параметры для фильтрации: {"name":"Ivanov", "country":"Russia", "city":"Moscow", "age":"null"}
 
-package org.example;
+package HomeWorkJava;
 
 public class Sem2Task1 {
     public static void main(String[] args) {

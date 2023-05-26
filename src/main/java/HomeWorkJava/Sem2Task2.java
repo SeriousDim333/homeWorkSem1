@@ -1,6 +1,6 @@
 //Реализуйте алгоритм сортировки пузырьком числового массива, результат после каждой итерации запишите в лог-файл.
 
-package org.example;
+package HomeWorkJava;
 
 import java.util.Arrays;
 import java.util.logging.Level;

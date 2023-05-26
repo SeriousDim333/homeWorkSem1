@@ -1,4 +1,4 @@
-package org.example;
+package HomeWorkJava;
 
 import java.io.FileInputStream;
 import java.util.logging.LogManager;

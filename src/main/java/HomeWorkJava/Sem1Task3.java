@@ -1,11 +1,11 @@
-package org.example;
+package HomeWorkJava;
 
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class Task3 {
-    private static Logger logger = Log.log(Task3.class.getName());
+public class Sem1Task3 {
+    private static Logger logger = Log.log(Sem1Task3.class.getName());
 
     public static void main(String[] args) {
         Functions functions = new Functions();

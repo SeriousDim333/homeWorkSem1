@@ -1,5 +1,5 @@
-{
-  "people": [
+
+  [
     {
       "Lastname": "Ivanov",
       "score": "5",
@@ -16,4 +16,4 @@
       "subject": "Phisic"
     }
   ]
-}
+

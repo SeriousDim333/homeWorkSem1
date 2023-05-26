@@ -1,10 +1,10 @@
 //Вычислить n-ое треугольного число (сумма чисел от 1 до n), n! (произведение чисел от 1 до n)
 
-package org.example;
+package HomeWorkJava;
 
 import java.util.Scanner;
 
-public class Task1 {
+public class Sem1Task1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("введите число: ");
