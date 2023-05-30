@@ -1,8 +1,10 @@
 package HomeWorkJava;
 
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
 import java.util.Random;
+import java.util.Collections;
 
 public class Functions {
     public int factorial(int a) {
@@ -91,6 +93,12 @@ public class Functions {
             }
         }
     }
+
+    public LinkedList  rev(LinkedList link){
+        Collections.reverse(link);
+        return link;
+    }
 }
+
 
 
