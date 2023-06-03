@@ -22,7 +22,7 @@ public class Sem5Task1 {
         System.out.println(nameToPhone);
 
         Stream<Map.Entry<String, List<String>>> st = nameToPhone.entrySet().stream();
-//        st.sorted(Comparator.comparing(x -> x.getValue().size())).forEach(System.out::println);
+        st.sorted(Comparator.comparing(x -> x.getValue().size())).forEach(System.out::println);
 
     }
 }
