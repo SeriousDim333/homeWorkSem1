@@ -1,10 +1,6 @@
-package HomeWorkJava;
+package Func;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Objects;
-import java.util.Random;
-import java.util.Collections;
+import java.util.*;
 
 public class Functions {
     public int factorial(int a) {
@@ -43,14 +39,14 @@ public class Functions {
         } else if (Objects.equals(c, "-")) {
             return a - b;
         } else if (Objects.equals(c, "/")) {
-            if (b==0) throw new RuntimeException("на ноль делить нельзя");
+            if (b == 0) throw new RuntimeException("на ноль делить нельзя");
             return a / b;
         } else {
             return a * b;
         }
     }
 
-    public String jsonPars(String str){
+    public String jsonPars(String str) {
         String[] arrstr = str.split(",");
         String result = "";
         for (String string : arrstr) {
@@ -63,40 +59,58 @@ public class Functions {
                     } else if (sb.charAt(i) == '{' || sb.charAt(i) == '}') {
                         sb.deleteCharAt(i);
                         i--;
-                    } else if (sb.charAt(i)=='"'&& flag<2) {
+                    } else if (sb.charAt(i) == '"' && flag < 2) {
                         sb.deleteCharAt(i);
                         flag++;
                         i--;
                     }
                 }
-                result += sb.toString()+ " and";
+                result += sb.toString() + " and";
             }
         }
         StringBuilder resB = new StringBuilder(result);
-        resB.delete(result.length()-4,result.length());
+        resB.delete(result.length() - 4, result.length());
         resB.append(';');
         return resB.toString();
     }
 
-    public void fillList(List<Integer> ints, int intsSize){
+    public void fillList(List<Integer> ints, int intsSize) {
         Random rnd = new Random();
         for (int i = 0; i < intsSize; i++) {
             ints.add(rnd.nextInt(100));
         }
     }
 
-    public void removeEven(List<Integer> ints){
+    public void removeEven(List<Integer> ints) {
         for (int i = 0; i < ints.size(); i++) {
-            if (ints.get(i) %2==0){
+            if (ints.get(i) % 2 == 0) {
                 ints.remove(i);
                 i--;
             }
         }
     }
 
-    public LinkedList  rev(LinkedList link){
+    public LinkedList rev(LinkedList link) {
         Collections.reverse(link);
         return link;
+    }
+
+    public void fillMap(HashMap<String, List<String>> fillMap) {
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            System.out.println("enter name or 'end': ");
+            String name = scanner.next();
+            if (name.equals("end")) break;
+            System.out.println("enter phone or 'end': ");
+            String phone = scanner.next();
+            if (phone.equals("end")) break;
+            if (!fillMap.containsKey(name)) {
+                fillMap.put(name, new ArrayList<String>());
+                fillMap.get(name).add(phone);
+            } else if (fillMap.containsKey(name)) {
+                fillMap.get(name).add(phone);
+            }
+        }
     }
 }
 

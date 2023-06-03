@@ -1,4 +1,4 @@
-package HomeWorkJava;
+package Sem4;
 
 import java.util.LinkedList;
 

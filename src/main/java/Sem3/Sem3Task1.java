@@ -5,12 +5,13 @@
 //        3) Найти максимальное значение
 //        4) Найти среднее значение
 
-package HomeWorkJava;
+package Sem3;
+
+import Func.Functions;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.OptionalDouble;
 
 public class Sem3Task1 {
     public static void main(String[] args) {

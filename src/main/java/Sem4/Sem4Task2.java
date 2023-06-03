@@ -1,4 +1,4 @@
-package HomeWorkJava;
+package Sem4;
 
 public class Sem4Task2 {
     public static void main(String[] args) {

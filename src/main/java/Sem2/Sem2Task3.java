@@ -9,7 +9,7 @@
 //Студент Петрова получил 4 по предмету Информатика.
 //Студент Краснов получил 5 по предмету Физика.
 
-package HomeWorkJava;
+package Sem2;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;

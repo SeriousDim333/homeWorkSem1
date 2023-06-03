@@ -1,6 +1,8 @@
 // Вывести все простые числа от 1 до 1000
 
-package HomeWorkJava;
+package Sem1;
+
+import Func.Functions;
 
 public class Sem1Task2 {
     public static void main(String[] args) {

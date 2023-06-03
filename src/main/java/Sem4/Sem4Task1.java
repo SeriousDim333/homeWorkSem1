@@ -1,4 +1,6 @@
-package HomeWorkJava;
+package Sem4;
+
+import Func.Functions;
 
 import java.util.LinkedList;
 

@@ -1,4 +1,7 @@
-package HomeWorkJava;
+package Sem1;
+
+import Func.Functions;
+import Sem2.Log;
 
 import java.util.Scanner;
 import java.util.logging.Level;
