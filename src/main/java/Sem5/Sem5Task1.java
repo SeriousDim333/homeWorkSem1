@@ -13,6 +13,8 @@ import java.util.Map.Entry;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+
+
 public class Sem5Task1 {
     public static void main(String[] args) {
         Functions functions = new Functions();
@@ -22,7 +24,7 @@ public class Sem5Task1 {
         System.out.println(nameToPhone);
 
         Stream<Map.Entry<String, List<String>>> st = nameToPhone.entrySet().stream();
-        st.sorted(Comparator.comparing(x -> x.getValue().size())).forEach(System.out::println);
+        st.sorted(Comparator.comparing(x -> -x.getValue().size())).forEach(System.out::println);
 
     }
 }
